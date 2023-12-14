@@ -17,7 +17,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
     <main class={"container"}>
       <section class={"greeting"}>
         <h1>Welcome to ScrollyTell.ing !</h1>
-        <h4 class="status">This website is under construction</h4>
         <p>
           Explore captivating stories and interactive content as you scroll
           through our site.
@@ -27,6 +26,12 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
           we've got something for everyone.
         </p>
         <p>Start scrolling and enjoy the journey!</p>
+
+
+        <footer class="footer">
+          <h5>This website is under construction.</h5>
+          <p>email me if you have anything to discuss: <a href="mail@scrollytell.ing">mail@scrollytell.ing</a></p>
+        </footer>
       </section>
     </main>
 
@@ -35,9 +40,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 
     <style>
       .container {
-        widows: 100vw;
+        width: 100vw;
         height: 100vh;
       }
+
       .greeting {
         width: 100%;
         height: 100%;
@@ -48,8 +54,16 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
         justify-content: center;
         flex-flow: column nowrap;
       }
+
       .status {
         color: var(--gray-light);
+      }
+
+      .footer {
+        margin: 1em;
+        padding: 0.5em;
+        border-left: 1em  solid var(--accent-dark);
+        background: var(--gray);
       }
     </style>
   </body>
